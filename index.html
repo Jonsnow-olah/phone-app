@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Start of Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Fonts -->
+    <title>Phonie App</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- App Wrapper -->
+    <main class="app">
+      <!-- Greeting -->
+      <section class="greeting">
+        <h1>Phonie App</h1>
+        <h2 class="title">What's up, <p id="name"></p></h2> 
+      </section>
+      <!-- End of Greeting -->
+
+      <!-- App -->
+      <section class="validate-number">
+        <h3>Validate Your Number</h3>
+        <form id="validate-form" method="post">
+          <label for="email">What is Your Email? *</label>
+          <input
+            type="text"
+            placeholder="e.g. adunola@gmail.com"
+            name="content"
+            id="content-email"
+            required
+          />
+
+          <label for="countries">What is Your Country? *</label>
+          <select id="countries" name="countries" required>
+            <option disabled selected></option>
+            <option value="nigeria">Nigeria</option>
+            <option value="congo">Congo</option>
+            <option value="namibia">Namibia</option>
+            <option value="uganda">Uganda</option>
+            <option value="south_africa">South Africa</option>
+            <option value="ghana">Ghana</option>
+            <option value="kenya">Kenya</option>
+            <option value="liberia">Liberia</option>
+            <option value="somalia">Somalia</option>
+          </select>
+
+          <label class="label" for="firstname">Firstname:</label>
+          <input
+            class="input"
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Firstname"
+            required
+          />
+          
+
+          <label class="label" for="phone_number"
+            >What is Your Phone Number? *</label
+          >
+          <input
+            type="tel"
+            placeholder="e.g. 08131234567"
+            name="phone_number"
+            id="phoneNumber"
+            required
+          />
+          
+
+          <button type="submit" id="btn">Validate</button>
+           <!-- Result -->
+      <section class="result">
+        <h4>Your result</h4>
+        <div class="result-item" id="result">
+          <small></small>
+          <small id="image"></small>
+        </div>
+      </section>
+        </form>
+      </section>
+      <!-- End App -->
+
+     
+      <!-- End  -->
+
+      <!-- Network logos-->
+      <section class="logos">
+        <img
+          src="./logos/9mobile.png"
+          alt="9mobile"
+          width="50px"
+          height="35px"
+        />
+        <img
+          src="./logos/Airtel.png"
+          alt="Airtel"
+          width="50px"
+          height="35px"
+        />
+        <img
+          src="./logos/Globacom.png"
+          alt="Glo"
+          width="50px"
+          height="38px"
+        />
+        <img src="./logos/MTN.jpg" 
+        alt="MTN"
+        width="55px" 
+        height="35px" />
+      </section>
+      <!-- End -->
+    </main>
+    <!-- End of App Wrapper -->
+
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
+    <script src="index.mjs" type="module"></script>
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
+  </body>
+</html>
